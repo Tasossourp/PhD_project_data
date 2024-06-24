@@ -1,0 +1,141 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4789,        133]
+NotebookOptionsPosition[      4034,        113]
+NotebookOutlinePosition[      4423,        129]
+CellTagsIndexPosition[      4380,        126]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"hbinter", "[", "10000", "]"}], "=", 
+    RowBox[{
+    "Import", "[", 
+     "\"\</localscratch/asourpis/metadata_MOGON/ccn_h2o_0.25_0.75/25/0.0-V_nm/\
+h_bond_analysis/hbonds_10000.csv\>\"", "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"hbinter", "[", "15000", "]"}], "=", 
+    RowBox[{
+    "Import", "[", 
+     "\"\</localscratch/asourpis/metadata_MOGON/ccn_h2o_0.25_0.75/25/0.0-V_nm/\
+h_bond_analysis/hbonds_15000.csv\>\"", "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"hbinter", "[", "20000", "]"}], "=", 
+    RowBox[{
+    "Import", "[", 
+     "\"\</localscratch/asourpis/metadata_MOGON/ccn_h2o_0.25_0.75/25/0.0-V_nm/\
+h_bond_analysis/hbonds_20000.csv\>\"", "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"hbinter", "[", "25000", "]"}], "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\</localscratch/asourpis/metadata_MOGON/ccn_h2o_0.25_0.75/25/0.0-V_nm/\
+h_bond_analysis/hbonds_25000.csv\>\"", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8486801261747313`*^9, 3.84868016705224*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"7f897b34-98e0-41b3-ad86-77edb18f607f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"/localscratch/asourpis/metadata_MOGON/\
+ccn_h2o_0.25_0.75/25/0.0-V_nm/h_bond_analysis/hbonds_10000.csv\\\\\\\"\\\"}]\\\
+) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 7, 7, 
+   20270267655642582656, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.848680156792564*^9, 3.848680169131897*^9}},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"e2e732d4-ca23-4719-a1c5-2a26692c6d83"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"/localscratch/asourpis/metadata_MOGON/\
+ccn_h2o_0.25_0.75/25/0.0-V_nm/h_bond_analysis/hbonds_15000.csv\\\\\\\"\\\"}]\\\
+) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 8, 8, 
+   20270267655642582656, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.848680156792564*^9, 3.8486801691415167`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"d507642a-8070-464d-afa6-df2c86a818e0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"/localscratch/asourpis/metadata_MOGON/\
+ccn_h2o_0.25_0.75/25/0.0-V_nm/h_bond_analysis/hbonds_20000.csv\\\\\\\"\\\"}]\\\
+) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 9, 9, 
+   20270267655642582656, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.848680156792564*^9, 3.848680169149919*^9}},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"1e783415-25b3-4c9c-9e8a-1ff68c4817ec"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"/localscratch/asourpis/metadata_MOGON/\
+ccn_h2o_0.25_0.75/25/0.0-V_nm/h_bond_analysis/hbonds_25000.csv\\\\\\\"\\\"}]\\\
+) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 10, 10, 
+   20270267655642582656, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.848680156792564*^9, 3.848680169157049*^9}},
+ CellLabel->
+  "During evaluation of \
+In[7]:=",ExpressionUUID->"0bada451-9c29-46bc-8877-79e22aac18e3"]
+}, Open  ]]
+},
+WindowSize->{960, 1016},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.1 for Linux x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1664eb67-9adc-462f-9daa-548070154176"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1314, 36, 339, "Input",ExpressionUUID->"7f897b34-98e0-41b3-ad86-77edb18f607f"],
+Cell[1897, 60, 527, 11, 22, "Message",ExpressionUUID->"e2e732d4-ca23-4719-a1c5-2a26692c6d83"],
+Cell[2427, 73, 529, 11, 22, "Message",ExpressionUUID->"d507642a-8070-464d-afa6-df2c86a818e0"],
+Cell[2959, 86, 527, 11, 22, "Message",ExpressionUUID->"1e783415-25b3-4c9c-9e8a-1ff68c4817ec"],
+Cell[3489, 99, 529, 11, 22, "Message",ExpressionUUID->"0bada451-9c29-46bc-8877-79e22aac18e3"]
+}, Open  ]]
+}
+]
+*)
+
