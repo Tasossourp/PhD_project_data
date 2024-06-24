@@ -1,0 +1,17 @@
+Biggest cluster cyclic analysis
+
+WORKFLOW: job_math.sh
+
+################################################################################################################################################
+1] workflow_hbonds.sh
+->INPUT: /biggest_clst/gro/1e-'+str(var)+'-V_nm/big_%i.gro (the biggest cluster each frame %i) [gro directory from the /biggest_clst/gro]
+->PROCESS: chimera_biggro_100ns.py & create directory biggest_clst/big_clst_cyclic_analysis/1e-$ef-V_nm
+->OUTPUT: hbond_ofbigger_%i.txt (the biggest hbond cluster hbond information)
+################################################################################################################################################
+
+######################## Finding the biggest cluster ############################
+2] big_clst_ef-1.wls [for instance V=10^{-1} V/nm]
+->INPUT: hbond_ofbigger_%i.txt [biggest_clst/big_clst_cyclic_analysis]
+->PROCESS:MATHEMATICA:big_clst_ef-1.wls [ConnectedComponents[g1][[1]]]
+->OUTPUT:cycle_1stclass_1e-1-V_nm_last.dat
+######################## Finding the biggest cluster ############################
