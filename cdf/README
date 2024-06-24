@@ -1,0 +1,9 @@
+Combined distribution function (CDF)
+
+WORKFLOW: cdf_workflow
+#############################################################################################################################
+1] cdf.sh
+->INPUT: files:travis_100ns_0.'$ef'-V_nm_lst25ns.pdb $workdir/input_cdf_1st_nbs.txt [TRAVIS]
+->PROCESS: creates the .pdb foramt trajecory files for further analysi by TRAVIS analyzer cdf.sh
+->OUTPUT:travis_100ns_0.'$ef'-V_nm_lst25ns.pdb 
+#############################################################################################################################

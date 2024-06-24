@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH -J travis_0-0.6          # Job name
+#SBATCH -o travis_0-0.6.out   # Specify stdout output file (%j expands to jobId)
+#SBATCH -p parallel              # Partition/Queue name
+#SBATCH -C skylake               # select 'skylake' architecture
+#SBATCH -N 1                     # Total number of nodes requested (32 cores/node)
+#SBATCH -t 05:00:00              # Run time (hh:mm:ss) - 0.5 hours
+
+#SBATCH --ntasks=1 
+#SBATCH --array=0-6
+#SBATCH -A m2_trr146           # Specify allocation to charge against
+ 
+# Load all necessary modules if needed (these are examples)
+# Loading modules in the script ensures a consistent environment.
+module load bio/GROMACS/2018.1-intel-2018.02
+
+declare -a fields
+
+fields=(0 1 2 3 4 5 6)
+
+export ef=${fields[${SLURM_ARRAY_TASK_ID}]}
+
+srun cdf.sh
+
+exit
+

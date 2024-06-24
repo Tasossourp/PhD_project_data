@@ -1,0 +1,178 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Nov  2 2020 11:33:18
+! Source code version: May 4 2020 (may the force (-: ) HF2
+! Input file written at Wed Nov  4 15:03:29 2020.
+! Do you want to assign atom data to them (y/n)? [yes] 
+
+! Automatically rename all atoms to corresponding elements (recommended) (y/n)? [yes] 
+
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+cdf
+! Use the advanced mode for the main part (y/n)? [no] 
+y
+! How many channels should the Combined Distribution Function have? [2] 
+rdf
+! Invalid input. Enter a non-negative integer number.
+! How many channels should the Combined Distribution Function have? [2] 
+
+! Channel 1: Enter function type (e.g. rdf): 
+rdf
+! Channel 2: Enter function type (e.g. rdf): 
+adf
+! Which of the molecules should be the reference molecule (C2H3N=1, H2O=2)? 
+1
+! Please enter the atom to put into the box center (e.g. C3): [center of mass]
+C2
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! CDF: Perform a three-body analysis (y) or observe one molecule at a time (n)? [no] 
+
+! Which molecule should be observed (C2H3N=1, H2O=2)? 
+1
+! Observe only certain molecules of C2H3N / C2H3N (y/n)? [no] 
+
+! Take reference atom(s) from RM C2H3N (0) or from OM C2H3N (1)? [0] 
+
+! Take observed atom(s) from RM C2H3N (0) or from OM C2H3N (1)? [1] 
+
+! Which atom(s) to take from RM C2H3N (e.g. "C1,C3-5,H", "*"=all)? [#2]
+N1,C1,C2
+! Which atom(s) to take from OM C2H3N (e.g. "C1,C3-5,H", "*"=all)? [#2]
+N1,C1,C2
+! Add another set of atoms to this (!) RDF (y/n)? [no] 
+
+! Use values (0), 1st time derivative (1), or 2nd time derivative (2) of the values? [0] 
+
+! Enter the minimal radius of this RDF (in pm): [0] 
+200
+! Enter the maximal radius of this RDF (in pm): [1000.0] 
+
+! Enter the resolution (bin count) for this RDF: [240] 
+300
+! Please enter histogram resolution (0=no histogram): [0] 
+
+! Draw a line in the agr file at g(r) = 1 (y/n)? [no] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Compute occurrence in nm^(-3) (y) or rel. to uniform density (n)? [no] 
+
+! Should the 1. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 2. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 1. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C2H3N (0) or from OM C2H3N (1)? [0] 
+
+! Please enter the atom(s) at the base point (e.g. C7):
+c2
+! Take atom(s) at the tip point from RM C2H3N (0) or from OM C2H3N (1)? [0] 
+N1
+! Invalid input. Enter an integer number between 0 and 1.
+! Take atom(s) at the tip point from RM C2H3N (0) or from OM C2H3N (1)? [0] 
+
+! Please enter the atom(s) at the tip point (e.g. C7):
+N1
+! Should the 2. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C2H3N (0) or from OM C2H3N (1)? [1] 
+
+! Please enter the atom(s) at the base point (e.g. C7):
+C2
+! Take atom(s) at the tip point from RM C2H3N (0) or from OM C2H3N (1)? [1] 
+
+! Please enter the atom(s) at the tip point (e.g. C7):
+N1
+! Add another set of vectors to this (!) ADF (y/n)? [no] 
+
+! Use values (0), 1st time derivative (1), or 2nd time derivative (2) of the values? [0] 
+
+! Enter minimal angle between the vectors: [0 deg] 
+
+! Enter maximal angle between the vectors: [180 deg] 
+
+! Plot ADF against angle (0) or against cosine (1)? [0] 
+
+! Force this ADF to be mirror-symmetric to the 90 deg line (y/n)? [no] 
+
+! Please enter the resolution (bin count) for this ADF: [100] 
+300
+! Please enter histogram resolution (0=no histogram): [0] 
+
+! Apply cone correction (y/n)? [yes] 
+
+! Please enter the resolution (bin count) for CDF channel 1 (RDF): [100] 
+
+! Please enter the resolution (bin count) for CDF channel 2 (ADF): [100] 
+
+! Please enter CDF histogram resolution (0=no histogram): [0] 
+
+! Write out +/- correlation plot for this CDF (y/n)? [no] 
+
+! Write out grace stack (multiple 2D plots) for this CDF (y/n)? [no] 
+
+! Write out input tuples (very large!) for this CDF (y/n)? [no] 
+
+! Normalize uniformly (3), data range (2), integral (1), or do not normalize (0)? [1] 
+
+! Set CDF integral to which value? [1000000] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Create a temporal difference plot for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+y
+! Use set of linear functions as condition ("extended mode") (y/n)? [no] 
+
+! Do you want to define a distance condition (y/n)? [yes] 
+
+! Which atom(s) to take from RM C2H3N (e.g. "C1,C3-5,H", "*"=all)? [#2]
+C1
+! Which atom(s) to take from OM C2H3N (e.g. "C1,C3-5,H", "*"=all)? [#2]
+C1
+! Enter another set of atoms for this condition (y/n)? [no] 
+
+! Enter min./max. distance (0) or min./max. nearest neighbor count (1)? [0] 
+
+! Enter the minimal distance in pm: [0] 
+
+! Enter the maximal distance in pm: [400] 
+
+! Enter another distance interval (y/n)? [no] 
+
+! Do you want to define an angular condition (y/n)? [no] 
+
+! Add another condition to this set of conditions (y/n)? [no] 
+
+! Enter an additional set of conditions (y/n)? [no] 
+
+! Invert this condition (only add bin entries if failed) (y/n)? [no] 
+
+! Add only atoms to the bin that passed the condition(s) (y/n)? [no] 
+
+! Save a snapshot every time the conditions are fulfilled (y/n)? [no] 
+
+! Save temporal development of this condition (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! Perform a multi-interval analysis (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+
