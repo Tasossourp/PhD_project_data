@@ -1,0 +1,23 @@
+4 Directories
+ 
+1)data
+2)gro
+3)ndx
+4)big_clst_cyclic_analysis
+
+######################## Finding the biggest cluster ############################
+1]->INPUT: hbonds_($time).csv from [/lustre/project/m2_trr146/asourpis/last_dance/hbonds/hbond_analysis]
+->PROCESS:MATHEMATICA:.wls [ConnectedComponents[g1][[1]]]
+->OUTPUT:biggestclst($time).dat
+######################## Finding the biggest cluster ############################
+
+########### Capturing the biggest cluster in real space ############################
+2,3]->INPUT:biggestclst($time).dat
+->OUTPUT:($time).ndx & ($time).gro
+########### Capturing the biggest cluster in real space ############################
+
+################   Cyclic distribution of the biggest cluster hydrogen bond formations ######################
+4]->INPUT:big_%i.gro
+->PROCESS:MATHEMATICA:.wls [FindFundamentalCycles[g1]]
+->OUTPUT:cycles_1stclass_$ef.dat
+################   Cyclic distribution of the biggest cluster hydrogen bond formations ######################
