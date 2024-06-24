@@ -1,0 +1,11 @@
+Hydrogen bond network analysis
+
+WORKFLOW: job.sh
+
+################################################################################################################################################
+1] workflow_hbonds.sh
+->PROCESS: traj_spacing_lst100ns.sh creates the .gro files and process them chimera_100ns.py inside the CHIMERA
+->OUTPUT: sim_100ns_0.'$ef'-V_nm_'$i'.gro & hbond_tot_%i.txt (hydrogen bond collection per frame)
+################################################################################################################################################
+
+
